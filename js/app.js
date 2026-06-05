@@ -26,11 +26,25 @@ function preencherCincoDias(dadosPrevisao) {
     const spanMax = document.querySelectorAll(".dia-max")
 
     for (let i = 0; i < 5; i++) {
-        const indice = i * 8
-        const dadoDoDia = dadosPrevisao.list[indice]
+        let tempMinDoDia = Infinity;
+        let tempMaxDoDia = -Infinity;
 
-        spanMin[i].innerHTML = Math.floor(dadoDoDia.main.temp_min) + "°"
-        spanMax[i].innerHTML = Math.floor(dadoDoDia.main.temp_max) + "°"
+        // O forecast tem dados a cada 3 horas, então 8 itens = 1 dia
+        for (let j = 0; j < 8; j++) {
+            const indice = i * 8 + j;
+            if (indice < dadosPrevisao.list.length) {
+                const previsaoDoIntervalo = dadosPrevisao.list[indice];
+                if (previsaoDoIntervalo.main.temp_min < tempMinDoDia) {
+                    tempMinDoDia = previsaoDoIntervalo.main.temp_min;
+                }
+                if (previsaoDoIntervalo.main.temp_max > tempMaxDoDia) {
+                    tempMaxDoDia = previsaoDoIntervalo.main.temp_max;
+                }
+            }
+        }
+
+        spanMin[i].innerHTML = Math.floor(tempMinDoDia) + "°"
+        spanMax[i].innerHTML = Math.floor(tempMaxDoDia) + "°"
     }
 }
 
