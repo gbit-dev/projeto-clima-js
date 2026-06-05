@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+</head>
+<body>
+    <h1 class="titulo">Previsão do tempo</h1>
+    <div class="caixa-previsao-cidade">
+    <div class="cabecalho-caixa">
+        <h2 class="cidade"></h2>
+        <span class="fechar">X</span>
+    </div>
+
+    <div class="tempo-agora">
+        <h1 class="temp"></h1>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="detalhes-hoje">
+        <p>↓ <span class="temp_min"></span> ↑ <span class="temp_max"></span></p>
+        <p>Sensação <span class="sensacao"></span></p>
+    </div>
+
+    <div class="vento-umidade">
+        <p>Vento <span class="vento"></span></p>
+        <p><span class="umidade"></span></p>
+    </div>
+    
+    <div class="proximos-dias">
+        <div class="dia-previsao">
+            <p class="dia-semana">Terça</p>
+            <p class="dia-temp">
+                <span class="dia-min">0°</span> 
+                <span class="dia-max">0°</span>
+            </p>
+        </div>
+        <div class="dia-previsao">
+            <p class="dia-semana">Quarta</p>
+            <p class="dia-temp">
+                <span class="dia-min">0°</span>
+                 <span class="dia-max">0°</span>
+            </p>
+        </div>
+        <div class="dia-previsao">
+            <p class="dia-semana">Quinta</p>
+            <p class="dia-temp">
+                <span class="dia-min">0°</span> 
+                <span class="dia-max">0°</span>
+            </p>
+        </div>
+        <div class="dia-previsao">
+            <p class="dia-semana">Sexta</p>
+            <p class="dia-temp">
+                <span class="dia-min">0°</span> 
+                <span class="dia-max">0°</span>
+            </p>
+        </div>
+        <div class="dia-previsao">
+            <p class="dia-semana">Sábado</p>
+            <p class="dia-temp">
+                <span class="dia-min">0°</span> 
+                <span class="dia-max">0°</span>
+            </p>
+        </div>
+    </div>
+</div>
+    <div class="busca">
+    <input type="text" id="input-cidade" placeholder="Insira aqui o nome da cidade">
+    <img src="img/image.png" class="lupa">
+    </div>
+
+
+    <hr>
+
+    <h2 class="capital">Capitais</h2>
+    <div class="container-capitais">
+        <div class="coluna">
+            <div class="linha-titulo"> <span>Min</span> <span>Máx</span> </div>
+            <div class="linha-cidade">
+                <span id="rio-min">0°</span>
+                <span id="rio-max">0°</span>
+                Rio de Janeiro
+            </div>
+            <div class="linha-cidade">
+                <span id="sp-min">0°</span> 
+                <span id="sp-max">0°</span> 
+                Sao Paulo
+            </div>
+            <div class="linha-cidade"> 
+                <span id="bh-min">0°</span> 
+                <span id="bh-max">0°</span>
+                Belo Horizonte
+            </div>
+            <div class="linha-cidade"> 
+                <span id="pa-min">0°</span> 
+                <span id="pa-max">0°</span> 
+                Porto Alegre
+            </div>
+            <div class="linha-cidade"> 
+                <span id="rc-min">0°</span> 
+                <span id="rc-max">0°</span>
+                Recife
+            </div>
+        </div>
+        <div class="coluna">
+            <div class="linha-titulo"> <span>Min</span> <span>Máx</span> </div>
+            <div class="linha-cidade"> 
+                <span id="sv-min">0°</span> 
+                <span id="sv-max">0°</span>
+                Salvador 
+            </div>
+            <div class="linha-cidade"> 
+                <span id="ct-min">0°</span> 
+                <span id="ct-max">0°</span> 
+                Curitiba 
+            </div>
+            <div class="linha-cidade"> 
+                <span id="ft-min">0°</span> 
+                <span id="ft-max">0°</span> 
+                Fortaleza 
+            </div>
+            <div class="linha-cidade"> 
+                <span id="mn-min">0°</span> 
+                <span id="mn-max">0°</span> 
+                Manaus 
+            </div>
+            <div class="linha-cidade"> 
+                <span id="jp-min">0°</span> 
+                <span id="jp-max">0°</span> 
+                João Pessoa 
+            </div>
+    </div>
+    </div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

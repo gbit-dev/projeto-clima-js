@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #d67900 , #ffb200);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*fundo parado e liso */
+    margin: 0;
+    min-height: 100vh;
+}
+
+.titulo {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 4px;
+    width: 570px;
+    text-align: center;
+}
+
+#input-cidade {
+    width: 350px;
+    padding: 10px;
+    border: black solid 1px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.busca {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    padding: 2px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.lupa {
+    width: 35px;
+    cursor: pointer;
+}
+
+hr{
+    width: 570px;
+    border: none;
+    border-top: 1px solid rgb(255, 255, 255);
+    margin-top: 40px;
+    margin-bottom: 1px;
+}
+
+.capital {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    width: 460px;
+    text-align: left;
+    margin-top: 20px;    /* Afasta do HR */
+    margin-bottom: 1px; /* Afasta das colunas */
+    padding-left: 40px;
+    letter-spacing: 2px;
+}
+
+.container-capitais {
+    width: 430px;
+    display: flex;   
+    justify-content: space-between;   
+    padding-top: 15px;
+}
+
+.linha-cidade { 
+    display: flex;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.linha-titulo {
+    color: black;
+    font-size: 10px;
+}
+
+.linha-cidade span,
+.linha-titulo span {
+    width: 40px;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.linha-cidade {
+    display: flex;
+    align-items: left;
+}
+
+.caixa-previsao-cidade {
+    display: none; 
+    background-color: #FFF9F2; 
+    width: 450px;
+    flex-direction: column;
+    align-items: flex-start; /* alinha o conteúdo a esquerda */
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.cabecalho-caixa {
+    width: 100%; /* ccupar a largura toda da caixa */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.fechar {
+    color: #D67900;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.proximos-dias {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px;
+    border-top: 1px solid #ff8c00; 
+    padding-top: 15px; 
+}
+
+.dia-previsao {
+    text-align: center; 
+}
+
+.tempo-agora {
+    display: flex;
+    align-items: baseline; 
+    gap: 15px;            
+    margin: 20px 0;
+}
+
+.temp {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.descricao {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dia-temp {
+    color: #ff8c00; 
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.fechar:hover {
+    color: #ffb200; 
+    transform: scale(1.2); /* aumenta a escala */
+    transition: 0.2s;
+}
+
+/* Seleciona o parágrafo que contém as setinhas dentro de .detalhes-hoje */
+.detalhes-hoje p {
+    color: #ff8c00; /* Define a cor padrão do parágrafo como Laranja */
+    font-weight: bold; /* Deixa as setinhas em negrito */
+}
+
+/* Garante que os números (spans) dentro desse parágrafo continuem pretos */
+.detalhes-hoje p span {
+    color: black; /* Pinta os números de preto */
+    margin: 0 5px; /* Dá um espacinho opcional entre a seta e o número */
+}
