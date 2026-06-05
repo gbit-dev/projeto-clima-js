@@ -11,7 +11,7 @@ export async function fetchdata(name) {
 
             return dados
         } catch (erro)  {
-            console.error("deu erro em buscar a capital:", capital.nome)
+            console.error("deu erro em buscar a cidade:", name)
         }
 }
 
