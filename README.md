@@ -36,10 +36,20 @@ Construído do zero para ser **ultrarrápido**. O controle da performance é 100
 
 ---
 
-<h2>🚀 Teste Agora Mesmo</h2>
+<h2>🚀 Como Testar Localmente</h2>
 
-Nenhuma complicação ou "build" necessário. 
+O projeto é "Plug and Play". Siga o passo a passo abaixo para rodar na sua máquina em poucos segundos:
 
-1. **Clone** o repositório.
-2. Abra o arquivo `index.html` no seu navegador favorito.
-3. Pronto! Aproveite a interface limpa e fluida.
+1. **Abra o seu terminal** (ou Git Bash) e cole o comando abaixo para clonar o repositório:
+   ```bash
+   git clone https://github.com/gbit-dev/projeto-clima-js.git
+   ```
+
+2. **Acesse a pasta** do projeto que acabou de ser baixada:
+   ```bash
+   cd projeto-clima-js
+   ```
+
+3. **Inicie o App:** Como este projeto não exige nenhum "build" complexo, basta dar um duplo clique no arquivo `index.html` ou usar a extensão *Live Server* do VS Code. O sistema já vai abrir direto no seu navegador.
+
+Aproveite a velocidade de uma interface 100% Vanilla JS!
