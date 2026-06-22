@@ -9,8 +9,8 @@
 <h2 align="center">📸 Demonstração</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gbit-dev/projeto-clima-js/master/img/PrevisaoTempo1.png" alt="Dashboard Visão Geral" width="48%" />
-  <img src="https://raw.githubusercontent.com/gbit-dev/projeto-clima-js/master/img/PrevisaoTempo2.png" alt="Detalhes e Tabela Nacional" width="48%" />
+  <img src="https://raw.githubusercontent.com/gbit-dev/projeto-clima-js/master/img/PrevisaoTempo1.png" alt="Dashboard Visão Geral" width="60%" />
+  <img src="https://raw.githubusercontent.com/gbit-dev/projeto-clima-js/master/img/PrevisaoTempo2.png" alt="Detalhes e Tabela Nacional" width="60%" />
 </p>
 
 ---
